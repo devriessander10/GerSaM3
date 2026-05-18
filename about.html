@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про нас — ГерСам</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">ГерСам</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html" class="active">Про нас</a></li>
+      <li><a href="cultures.html">Культури</a></li>
+      <li><a href="animals.html">Тварини</a></li>
+      <li><a href="tech.html">Техніка</a></li>
+      <li><a href="land.html">Земля</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="hero-tag">Наша компанія</span>
+    <h1>Про <em>ГерСам</em></h1>
+    <p>Справжній сімейний бізнес, що зростає разом з аграрним сектором України.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="two-col" style="margin-bottom: 80px;">
+      <div class="col-img" style="overflow:hidden; border-radius:var(--radius); aspect-ratio:4/3;">
+        <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?w=800&q=80"
+             alt="Пшеничне поле"
+             style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="col-text">
+        <span class="section-tag">Наша Історія</span>
+        <h2>Від сімейної ферми — до платформи</h2>
+        <p>ГерСам — це справжня компанія, власником якої є батько de Vries Hendrik Gerrit. Починаючи з невеликого сімейного господарства, ми виросли у повноцінну агробізнес-платформу, що об'єднує фермерів та покупців по всій Україні.</p>
+        <p>Ми вірили, що кожен фермер заслуговує мати зручний доступ до інформації, партнерів і ринків — без зайвих посередників.</p>
+        <div style="margin-top: 24px;">
+          <span class="tag">Засновано 1998</span>
+          <span class="tag amber">12+ регіонів</span>
+          <span class="tag">Сімейний бізнес</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col reverse" style="margin-bottom: 80px;">
+      <div class="col-img" style="overflow:hidden; border-radius:var(--radius); aspect-ratio:4/3;">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80"
+             alt="Ферма"
+             style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="col-text">
+        <span class="section-tag">Місія та цінності</span>
+        <h2>Що нами рухає</h2>
+        <p>Наша місія — зробити аграрний бізнес доступним, прозорим та ефективним для кожного учасника ринку: від малого фермера до великого агропідприємства.</p>
+        <ul style="color: var(--text-muted); padding-left: 20px; line-height: 2.2; margin-top: 12px;">
+          <li>Прозорість та чесність у кожній угоді</li>
+          <li>Підтримка українського агровиробника</li>
+          <li>Інновації та сучасні технології</li>
+          <li>Сталий розвиток та екологічна відповідальність</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" style="background: var(--cream-dark); padding: 80px 5%;">
+    <div class="section-header">
+      <span class="section-tag">Наша команда</span>
+      <h2>Люди, що роблять ГерСам</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👨‍🌾</div>
+        <div class="team-info">
+          <h3>de Vries Hendrik Gerrit</h3>
+           <img src="https://i.ytimg.com/vi/6PbbMMyjFF8/hqdefault.jpg">
+          <p>Засновник та власник. Досвід у агробізнесі понад 30 років.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #c8853a, #e8c47a);">👨‍💻</div>
+        <div class="team-info">
+          <h3>Sander de Vries</h3>
+          <p>Розробник платформи. Учень 10-А класу, відповідальний за цифровий розвиток.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #1a3a2a, #3d7a53);">👩‍🔬</div>
+        <div class="team-info">
+          <h3>Агрономічна команда</h3>
+          <p>Досвідчені агрономи та ветеринари, що надають консультації.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-text">
+      <h2>Хочете співпрацювати?</h2>
+      <p>Ми завжди відкриті до нових партнерств та пропозицій.</p>
+    </div>
+    <a href="contacts.html" class="btn-primary light">Зв'язатись</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo">ГерСам</span>
+      <p>Сучасна агробізнес-платформа для фермерів України.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Розділи</h4>
+      <ul>
+        <li><a href="cultures.html">Культури</a></li>
+        <li><a href="animals.html">Тварини</a></li>
+        <li><a href="tech.html">Техніка</a></li>
+        <li><a href="land.html">Земля</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Компанія</h4>
+      <ul>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Контакти</h4>
+      <p>📞 +38 (050) 000-00-00</p>
+      <p>✉️ info@gersam.ua</p>
+    </div>
+    <div class="footer-bottom"><span>© 2024 ГерСам. Всі права захищені.</span></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

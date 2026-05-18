@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Земля — ГерСам</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">ГерСам</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cultures.html">Культури</a></li>
+      <li><a href="animals.html">Тварини</a></li>
+      <li><a href="tech.html">Техніка</a></li>
+      <li><a href="land.html" class="active">Земля</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="hero-tag">Земельний ринок</span>
+    <h1>Купівля та <em>Оренда</em> землі</h1>
+    <p>Актуальні пропозиції по сільськогосподарських угіддях, аналітика ринку та юридичний супровід угод.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="content-grid" style="margin-bottom: 60px;">
+      <div class="content-card" style="border-top: 4px solid var(--green);">
+        <div class="icon">🏞️</div>
+        <h3>1. Продаж Земель</h3>
+        <p>Актуальні пропозиції по купівлі сільськогосподарських угідь по всій Україні. Різні розміри ділянок та категорії земель.</p>
+        <div style="margin-top: 16px; padding: 16px; background: var(--cream); border-radius: 8px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;"><span style="color:var(--text-muted); font-size:.9rem;">Середня ціна по регіону:</span></div>
+          <div style="display:flex; justify-content:space-between;"><strong>Волинська обл.</strong><span class="tag amber">від 40 000 грн/га</span></div>
+        </div>
+      </div>
+      <div class="content-card" style="border-top: 4px solid var(--amber);">
+        <div class="icon">📋</div>
+        <h3>2. Оренда Полів</h3>
+        <p>Можливості оренди землі для тимчасового використання. Гнучкі строки від 1 до 49 років. Прозорі умови договорів.</p>
+        <div style="margin-top: 16px; padding: 16px; background: var(--cream); border-radius: 8px;">
+          <div style="display:flex; justify-content:space-between;"><strong>Оренда:</strong><span class="tag">від 3 000 грн/га/рік</span></div>
+        </div>
+      </div>
+      <div class="content-card" style="border-top: 4px solid var(--green-mid);">
+        <div class="icon">📊</div>
+        <h3>3. Аналітика Ринків</h3>
+        <p>Огляди цін на землю, регіональні особливості та прогнози. Актуальна інформація для прийняття зважених рішень.</p>
+        <div style="margin-top: 16px;">
+          <span class="tag">Щомісячні звіти</span>
+          <span class="tag amber">Регіональна статистика</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" style="background: var(--cream-dark); padding: 80px 5%;">
+    <div class="two-col">
+      <div class="col-img" style="overflow:hidden; border-radius:var(--radius); aspect-ratio:4/3;">
+        <img src="https://print4you.com.ua/upload/iblock/84a/84add72b955c31b2c2782978e43cf4af.jpg"
+             alt="Сільськогосподарські угіддя"
+             style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="col-text">
+        <span class="section-tag">Юридичний супровід</span>
+        <h2>4. Безпечна угода — наш пріоритет</h2>
+        <p>Купівля та оренда землі в Україні — процес, що вимагає ретельного юридичного контролю. Наша команда допоможе на кожному етапі.</p>
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
+          <div style="display:flex; gap:16px; align-items:flex-start;">
+            <span style="font-size:1.4rem; flex-shrink:0;">✅</span>
+            <div><strong>Перевірка правового статусу</strong><br><span style="color:var(--text-muted); font-size:.92rem;">Аналіз документів на землю, обтяжень та обмежень</span></div>
+          </div>
+          <div style="display:flex; gap:16px; align-items:flex-start;">
+            <span style="font-size:1.4rem; flex-shrink:0;">✅</span>
+            <div><strong>Підготовка договорів</strong><br><span style="color:var(--text-muted); font-size:.92rem;">Складання та перевірка договорів купівлі-продажу та оренди</span></div>
+          </div>
+          <div style="display:flex; gap:16px; align-items:flex-start;">
+            <span style="font-size:1.4rem; flex-shrink:0;">✅</span>
+            <div><strong>Реєстрація в держреєстрі</strong><br><span style="color:var(--text-muted); font-size:.92rem;">Оформлення угод та реєстрація права власності</span></div>
+          </div>
+          <div style="display:flex; gap:16px; align-items:flex-start;">
+            <span style="font-size:1.4rem; flex-shrink:0;">✅</span>
+            <div><strong>Консультації з оподаткування</strong><br><span style="color:var(--text-muted); font-size:.92rem;">Особливості оподаткування при земельних угодах</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-text">
+      <h2>Шукаєте земельну ділянку?</h2>
+      <p>Залиште запит — ми знайдемо відповідну пропозицію у вашому регіоні.</p>
+    </div>
+    <a href="contacts.html" class="btn-primary light">Залишити запит</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="logo">ГерСам</span><p>Сучасна агробізнес-платформа для фермерів України.</p></div>
+    <div class="footer-links"><h4>Розділи</h4><ul><li><a href="cultures.html">Культури</a></li><li><a href="animals.html">Тварини</a></li><li><a href="tech.html">Техніка</a></li><li><a href="land.html">Земля</a></li></ul></div>
+    <div class="footer-links"><h4>Компанія</h4><ul><li><a href="about.html">Про нас</a></li><li><a href="contacts.html">Контакти</a></li></ul></div>
+    <div class="footer-contact"><h4>Контакти</h4><p>📞 +38 (050) 000-00-00</p><p>✉️ info@gersam.ua</p></div>
+    <div class="footer-bottom"><span>© 2024 ГерСам. Всі права захищені.</span></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

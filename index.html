@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГерСам — Агробізнес-Платформа</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* News image fix */
+    .news-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .news-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .news-card:hover .news-img img {
+      transform: scale(1.04);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">ГерСам</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cultures.html">Культури</a></li>
+      <li><a href="animals.html">Тварини</a></li>
+      <li><a href="tech.html">Техніка</a></li>
+      <li><a href="land.html">Земля</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Агробізнес-платформа України</span>
+      <h1>Ваш надійний<br><em>партнер у полі</em></h1>
+      <p>ГерСам — централізована платформа для фермерів та агропідприємств. Культури, тварини, техніка, земля — все в одному місці.</p>
+      <div class="hero-cta">
+        <a href="about.html" class="btn-primary">Дізнатись більше</a>
+        <a href="contacts.html" class="btn-outline">Зв'язатись з нами</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-card">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=900&q=80"
+             alt="Ферма ГерСам"
+             style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-item">
+      <span class="stat-num">500+</span>
+      <span class="stat-label">Партнерів</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">12</span>
+      <span class="stat-label">Регіонів</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">8</span>
+      <span class="stat-label">Років досвіду</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">1000+</span>
+      <span class="stat-label">Га землі</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="section-header">
+      <span class="section-tag">Що ми пропонуємо</span>
+      <h2>Повний спектр<br>агробізнесу</h2>
+    </div>
+    <div class="services-grid">
+      <a href="cultures.html" class="service-card">
+        <div class="service-icon">🌾</div>
+        <h3>Культури</h3>
+        <p>Зернові, олійні, овочі, фрукти — детальна інформація та поради агрономів.</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="animals.html" class="service-card">
+        <div class="service-icon">🐄</div>
+        <h3>Тварини</h3>
+        <p>Породи, утримання, ветеринарні поради та комерційне тваринництво.</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="tech.html" class="service-card featured">
+        <div class="service-icon">🚜</div>
+        <h3>Техніка</h3>
+        <p>Трактори, комбайни, ґрунтообробна техніка — характеристики та оренда.</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="land.html" class="service-card">
+        <div class="service-icon">🗺️</div>
+        <h3>Земля</h3>
+        <p>Продаж та оренда сільськогосподарських угідь. Юридичний супровід.</p>
+        <span class="card-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news">
+    <div class="section-header">
+      <span class="section-tag">Актуально</span>
+      <h2>Новини галузі</h2>
+    </div>
+    <div class="news-grid">
+
+      <!-- Big card -->
+      <article class="news-card big">
+        <div class="news-img">
+          <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?w=900&q=80"
+               alt="Врожай пшениці 2024">
+        </div>
+        <div class="news-body">
+          <span class="news-cat">Культури</span>
+          <h3>Врожай пшениці 2024: прогнози та реальність</h3>
+          <span class="news-date">15 листопада 2024</span>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="news-card">
+        <div class="news-img">
+          <img src="https://images.unsplash.com/photo-1718470667206-7f8618a1be50?w=800&q=80"
+               alt="Трактори John Deere в Україні">
+        </div>
+        <div class="news-body">
+          <span class="news-cat">Техніка</span>
+          <h3>Нові моделі тракторів John Deere в Україні</h3>
+          <span class="news-date">10 листопада 2024</span>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="news-card">
+        <div class="news-img">
+          <img src="https://uga.ua/wp-content/uploads/photo_2024-03-12_12-07-14.jpg"
+               onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80'"
+               alt="Ринок землі">
+        </div>
+        <div class="news-body">
+          <span class="news-cat">Земля</span>
+          <h3>Ринок землі: тенденції осінь 2024</h3>
+          <span class="news-date">5 листопада 2024</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-text">
+      <h2>Маєте питання або пропозиції?</h2>
+      <p>Ми завжди раді допомогти. Зв'яжіться з нами зручним способом.</p>
+    </div>
+    <a href="contacts.html" class="btn-primary light">Написати нам</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo">ГерСам</span>
+      <p>Сучасна агробізнес-платформа для фермерів України.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Розділи</h4>
+      <ul>
+        <li><a href="cultures.html">Культури</a></li>
+        <li><a href="animals.html">Тварини</a></li>
+        <li><a href="tech.html">Техніка</a></li>
+        <li><a href="land.html">Земля</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Компанія</h4>
+      <ul>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Контакти</h4>
+      <p>📞 +38 (050) 000-00-00</p>
+      <p>✉️ info@gersam.ua</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 ГерСам. Всі права захищені.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

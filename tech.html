@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техніка — ГерСам</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">ГерСам</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cultures.html">Культури</a></li>
+      <li><a href="animals.html">Тварини</a></li>
+      <li><a href="tech.html" class="active">Техніка</a></li>
+      <li><a href="land.html">Земля</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="hero-tag">Агротехніка</span>
+    <h1>Сучасна <em>Техніка</em></h1>
+    <p>Трактори, комбайни, ґрунтообробна техніка — характеристики, відгуки та можливості придбання або оренди.</p>
+  </section>
+
+  <section class="content-section">
+    <!-- Tractor models with real photos -->
+    <div class="section-header">
+      <span class="section-tag">Трактори</span>
+      <h2>Трактори для будь-яких завдань</h2>
+    </div>
+    <p style="color:var(--text-muted); max-width:600px; margin-bottom: 40px;">Від компактних садових тракторів до потужних машин для великих ферм. Ми допоможемо підібрати оптимальну модель для ваших потреб.</p>
+    <div class="content-grid" style="margin-bottom: 80px;">
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1718470667206-7f8618a1be50?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+             alt="John Deere 6R 155"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <h3 style="margin:0;">John Deere 6R 155</h3>
+            <span class="tag amber">від 85 000 $</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:.92rem;">155 к.с. | Універсальний трактор для широкого спектру польових робіт. GPS-навігація, автопілот.</p>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://hectare.ua/upload/62d55fd77ea96.jpg"
+             alt="New Holland T7"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <h3 style="margin:0;">New Holland T7.315</h3>
+            <span class="tag amber">від 140 000 $</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:.92rem;">315 к.с. | Потужний агрегат для великих площ. PLM Intelligence система точного землеробства.</p>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://www.mascus.ua/_next/image?url=https%3A%2F%2Fdnge9sb91helb.cloudfront.net%2Fimagetilewm%2Fproduct%2F9eaed1ef%2Fcase-ih-puma-220-mc-gps-automa%2C8c29b00f.jpg&w=3840&q=75"
+             alt="Case IH Puma 220"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <h3 style="margin:0;">Case IH Puma 220</h3>
+            <span class="tag amber">від 110 000 $</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:.92rem;">220 к.с. | Технологічний трактор з AFS Connect телематикою та автопілотом CVX трансмісія.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="content-section" style="background: var(--cream-dark); padding: 80px 5%;">
+    <div class="section-header">
+      <span class="section-tag">Весь парк техніки</span>
+      <h2>Комплексне оснащення ферми</h2>
+    </div>
+    <div class="content-grid">
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://storage.agravery.com/uploads/files/Reklama/New_holland/CR10_90_14_168_765.jpg"
+             alt="Комбайн"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px;">
+          <h3>Комбайни</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin:8px 0 12px;">Зернозбиральні, кукурудзозбиральні та соняшниковозбиральні комбайни провідних виробників.</p>
+          <ul style="color:var(--text-muted); font-size:.88rem; padding-left:18px; line-height:2;">
+            <li>Claas Lexion 8900</li>
+            <li>John Deere S790</li>
+            <li>New Holland CR9.90</li>
+          </ul>
+          <span class="tag" style="margin-top: 12px; display:inline-block;">Оренда від 3 000 грн/га</span>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://albion.biz.ua/wp-content/uploads/2023/10/fcc.jpg"
+             alt="Ґрунтообробна техніка"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px;">
+          <h3>Ґрунтообробна техніка</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin:8px 0 12px;">Плуги, культиватори, дискові борони, глибокорозпушувачі та посівні комплекси.</p>
+          <ul style="color:var(--text-muted); font-size:.88rem; padding-left:18px; line-height:2;">
+            <li>Дискові борони 4–8 м</li>
+            <li>Культиватори суцільного обробітку</li>
+            <li>Сівалки точного висіву</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://ifarming.ua/image/cache/catalog/articles/kontrol_resursiv/novimozhlivostisamohidnihobpriskuvachiv/211117069-gwxb7iwrjn-1310x600-custom.jpg"
+             alt="Обприскувач"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px;">
+          <h3>Обприскувачі та Розкидачі</h3>
+          <p style="color:var(--text-muted); font-size:.92rem; margin:8px 0 12px;">Штангові обприскувачі, розкидачі мінеральних добрив, машини для внесення рідких добрив.</p>
+          <ul style="color:var(--text-muted); font-size:.88rem; padding-left:18px; line-height:2;">
+            <li>Причіпні та самохідні обприскувачі</li>
+            <li>Дискові розкидачі добрив</li>
+            <li>Дрони для точного землеробства</li>
+          </ul>
+          <span class="tag amber" style="margin-top:12px; display:inline-block;">Точне землеробство</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-text">
+      <h2>Потрібна техніка в оренду?</h2>
+      <p>Ми допоможемо підібрати та організувати оренду сільськогосподарської техніки.</p>
+    </div>
+    <a href="contacts.html" class="btn-primary light">Дізнатись про оренду</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="logo">ГерСам</span><p>Сучасна агробізнес-платформа для фермерів України.</p></div>
+    <div class="footer-links"><h4>Розділи</h4><ul><li><a href="cultures.html">Культури</a></li><li><a href="animals.html">Тварини</a></li><li><a href="tech.html">Техніка</a></li><li><a href="land.html">Земля</a></li></ul></div>
+    <div class="footer-links"><h4>Компанія</h4><ul><li><a href="about.html">Про нас</a></li><li><a href="contacts.html">Контакти</a></li></ul></div>
+    <div class="footer-contact"><h4>Контакти</h4><p>📞 +38 (050) 000-00-00</p><p>✉️ info@gersam.ua</p></div>
+    <div class="footer-bottom"><span>© 2024 ГерСам. Всі права захищені.</span></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

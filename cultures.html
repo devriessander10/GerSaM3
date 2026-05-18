@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Культури — ГерСам</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">ГерСам</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cultures.html" class="active">Культури</a></li>
+      <li><a href="animals.html">Тварини</a></li>
+      <li><a href="tech.html">Техніка</a></li>
+      <li><a href="land.html">Земля</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="hero-tag">Рослинництво</span>
+    <h1>Сільськогосподарські<br><em>Культури</em></h1>
+    <p>Детальна інформація про зернові, олійні, овочі та фрукти — сорти, технології вирощування та актуальні ціни.</p>
+  </section>
+
+  <!-- ===== ЗЕРНОВІ ===== -->
+  <section class="content-section">
+    <div class="section-header">
+      <span class="section-tag">Зернові</span>
+      <h2>🌾 Зернові культури</h2>
+    </div>
+    <div class="content-grid">
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://storage.agravery.com/uploads/.thumbs/1_pixabay/wheat-863392_1280.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?w=800&q=80'"
+             alt="Пшениця"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🌾</div>
+          <h3>Пшениця</h3>
+          <p>Основна зернова культура України. Вирощується як озима та яра. Використовується для виробництва борошна, хліба та корму для тварин.</p>
+          <div style="margin-top: 16px;">
+            <span class="tag">Врожайність: 4–7 т/га</span>
+            <span class="tag amber">Ціна: 5 800 грн/т</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://yaraurl.com/bkvw"
+             onerror="this.src='https://images.unsplash.com/photo-1601593768799-76e17a96bc2e?w=800&q=80'"
+             alt="Кукурудза"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🌽</div>
+          <h3>Кукурудза</h3>
+          <p>Висока врожайність та широке застосування: силос, зерно, біопаливо. Потребує родючих ґрунтів та достатнього зволоження.</p>
+          <div style="margin-top: 16px;">
+            <span class="tag">Врожайність: 7–12 т/га</span>
+            <span class="tag amber">Ціна: 5 200 грн/т</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://agroelita.info/wp-content/uploads/2019/05/zhyto-dlya-zhurnala-%E2%80%93-kopiya.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=80'"
+             alt="Ячмінь та Жито"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🌿</div>
+          <h3>Ячмінь та Жито</h3>
+          <p>Невибагливі культури для складніших умов. Ячмінь — для пивоварства та кормових цілей. Жито — стійке до холоду та посухи.</p>
+          <div style="margin-top: 16px;">
+            <span class="tag">Врожайність: 3–5 т/га</span>
+            <span class="tag amber">Ціна: 4 500 грн/т</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ОЛІЙНІ ===== -->
+  <section class="content-section" style="background: var(--cream-dark); padding: 80px 5%;">
+    <div class="section-header">
+      <span class="section-tag">Олійні</span>
+      <h2>🌻 Олійні культури</h2>
+    </div>
+    <div class="content-grid">
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://storage.agravery.com/uploads/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%D0%9F%D0%B0%D0%BF%D0%BA%D0%B0/sunfl.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1565073624497-7144969fd0f9?w=800&q=80'"
+             alt="Соняшник"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🌻</div>
+          <h3>Соняшник</h3>
+          <p>Головна олійна культура України. Використовується для виробництва соняшникової олії, шроту та корму. Україна — один з топ-виробників у світі.</p>
+          <div style="margin-top: 16px;"><span class="tag amber">Ціна: 14 000 грн/т</span></div>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmIJzWMS1GbGDys7FM-Yh4c8FNflgUso-7tA&s"
+             onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80'"
+             alt="Ріпак"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🫒</div>
+          <h3>Ріпак</h3>
+          <p>Рання ярова або озима культура. Використовується для виробництва олії та біодизелю. Цінна попередня культура для пшениці.</p>
+          <div style="margin-top: 16px;"><span class="tag amber">Ціна: 17 500 грн/т</span></div>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://www.growhow.in.ua/wp-content/uploads/2022/12/036232_MD.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1591009516547-bd3f3b0f3f3e?w=800&q=80'"
+             alt="Соя"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🫘</div>
+          <h3>Соя</h3>
+          <p>Висока цінність завдяки вмісту білка. Широко застосовується у тваринництві та харчовій промисловості. Фіксує азот у ґрунті.</p>
+          <div style="margin-top: 16px;"><span class="tag amber">Ціна: 16 000 грн/т</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ОВОЧІ ТА ФРУКТИ ===== -->
+  <section class="content-section">
+    <div class="section-header">
+      <span class="section-tag">Овочі та Фрукти</span>
+      <h2>🥕 Овочі та Фрукти</h2>
+    </div>
+    <div class="content-grid">
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://salads.com.ua/sites/default/files/styles/510x287/public/ingredients/potato.webp"
+             onerror="this.src='https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&q=80'"
+             alt="Картопля та Коренеплоди"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🥔</div>
+          <h3>Картопля та Коренеплоди</h3>
+          <ul>
+            <li>Картопля — рання, середня, пізня</li>
+            <li>Морква — відкритий та закритий ґрунт</li>
+            <li>Буряк — цукровий та столовий</li>
+            <li>Цибуля та часник</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://bizagro.com.ua/wp-content/uploads/2023/05/cucumbers.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80'"
+             alt="Помідори та Огірки"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🍅</div>
+          <h3>Помідори та Огірки</h3>
+          <ul>
+            <li>Помідори тепличні та ґрунтові</li>
+            <li>Огірки — партенокарпічні сорти</li>
+            <li>Перець та баклажани</li>
+            <li>Кабачки та гарбузи</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://agroportal.ua/storage/media/uploads/articles/996b4a5-1.jpg"
+             onerror="this.src='https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=800&q=80'"
+             alt="Фрукти та Ягоди"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:24px 28px 28px;">
+          <div class="icon" style="font-size:1.8rem; margin-bottom:10px;">🍎</div>
+          <h3>Фрукти та Ягоди</h3>
+          <ul>
+            <li>Яблука, груші — зимові сорти</li>
+            <li>Полуниця — ремонтантна та звичайна</li>
+            <li>Малина, смородина, аґрус</li>
+            <li>Сливи, вишні, черешні</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-text">
+      <h2>Потрібна консультація агронома?</h2>
+      <p>Наші спеціалісти допоможуть підібрати оптимальні культури для вашого господарства.</p>
+    </div>
+    <a href="contacts.html" class="btn-primary light">Отримати консультацію</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="logo">ГерСам</span><p>Сучасна агробізнес-платформа для фермерів України.</p></div>
+    <div class="footer-links"><h4>Розділи</h4><ul><li><a href="cultures.html">Культури</a></li><li><a href="animals.html">Тварини</a></li><li><a href="tech.html">Техніка</a></li><li><a href="land.html">Земля</a></li></ul></div>
+    <div class="footer-links"><h4>Компанія</h4><ul><li><a href="about.html">Про нас</a></li><li><a href="contacts.html">Контакти</a></li></ul></div>
+    <div class="footer-contact"><h4>Контакти</h4><p>📞 +38 (050) 000-00-00</p><p>✉️ info@gersam.ua</p></div>
+    <div class="footer-bottom"><span>© 2024 ГерСам. Всі права захищені.</span></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

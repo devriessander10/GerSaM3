@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тварини — ГерСам</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">ГерСам</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="cultures.html">Культури</a></li>
+      <li><a href="animals.html" class="active">Тварини</a></li>
+      <li><a href="tech.html">Техніка</a></li>
+      <li><a href="land.html">Земля</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <span class="hero-tag">Тваринництво</span>
+    <h1>Породи та <em>утримання</em></h1>
+    <p>Велика рогата худоба, свинарство, птахівництво — поради ветеринарів та сучасні підходи до тваринництва.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="two-col" style="margin-bottom: 80px;">
+      <div class="col-img" style="overflow:hidden; border-radius:var(--radius); aspect-ratio:4/3;">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80"
+             alt="Голштинська корова"
+             style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div class="col-text">
+        <span class="section-tag">ВРХ</span>
+        <h2>Велика Рогата Худоба</h2>
+        <p>Розведення ВРХ — одна з ключових галузей тваринництва. Ми надаємо інформацію про найпопулярніші породи, рекомендації щодо годівлі та утримання.</p>
+        <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 12px;">
+          <div style="padding: 16px; background: var(--cream); border-radius: 8px; border-left: 3px solid var(--green);">
+            <strong>Голштинська</strong> — рекордсменка з молочної продуктивності, до 12 000 л/рік
+          </div>
+          <div style="padding: 16px; background: var(--cream); border-radius: 8px; border-left: 3px solid var(--amber);">
+            <strong>Симентальська</strong> — м'ясо-молочна порода, невибаглива до умов
+          </div>
+          <div style="padding: 16px; background: var(--cream); border-radius: 8px; border-left: 3px solid var(--green-mid);">
+            <strong>Герефордська</strong> — провідна м'ясна порода, швидкий набір ваги
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" style="background: var(--cream-dark); padding: 80px 5%;">
+    <div class="section-header">
+      <span class="section-tag">Свинарство та Птахівництво</span>
+      <h2>Інші галузі тваринництва</h2>
+    </div>
+    <div class="content-grid">
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://agroportal.ua/storage/media/orig/uploads/articles/3d75912--------------------------.jpg"
+             onerror="this.src='https://images.pexels.com/photos/3214960/pexels-photo-3214960.jpeg?auto=compress&cs=tinysrgb&w=800'"
+             alt="Свинарство"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:28px;">
+          <h3>Свинарство</h3>
+          <p>Свинарство — рентабельна галузь зі швидкою оборотністю. Основні породи для комерційного вирощування:</p>
+          <ul style="margin-top: 12px; color:var(--text-muted); font-size:.92rem; padding-left:18px; line-height:2;">
+            <li>Велика біла (Йоркшир)</li>
+            <li>Ландрас — бекон, м'ясо</li>
+            <li>П'єтрен — м'ясна порода</li>
+          </ul>
+          <div style="margin-top: 16px;"><span class="tag">Вирощування: 5–7 міс</span></div>
+        </div>
+      </div>
+      <div class="content-card" style="padding:0; overflow:hidden;">
+  
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80"
+             alt="Птахівництво"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:28px;">
+          <h3>Птахівництво</h3>
+          <p>Кури, гуси, качки та індики. Один з найдоступніших напрямків для початківців у тваринництві.</p>
+          <ul style="margin-top: 12px; color:var(--text-muted); font-size:.92rem; padding-left:18px; line-height:2;">
+            <li>Бройлери — м'ясний напрямок</li>
+            <li>Несучки — яєчний напрямок</li>
+            <li>Гуси та качки — комбінований</li>
+          </ul>
+          <div style="margin-top: 16px;"><span class="tag amber">До 300+ яєць/рік</span></div>
+        </div>
+      </div>
+      <div class="content-card" style="padding:0; overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1484557985045-edf25e08da73?w=800&q=80"
+             alt="Дрібна худоба"
+             style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block;">
+        <div style="padding:28px;">
+          <h3>Дрібна худоба</h3>
+          <p>Вівчарство та козівництво — нішеві напрямки з хорошою рентабельністю для малих господарств.</p>
+          <ul style="margin-top: 12px; color:var(--text-muted); font-size:.92rem; padding-left:18px; line-height:2;">
+            <li>Вівці — м'ясо, вовна, молоко</li>
+            <li>Кози — молоко та сир</li>
+            <li>Кролі — дієтичне м'ясо</li>
+          </ul>
+          <div style="margin-top: 16px;"><span class="tag">Мінімальні вкладення</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-text">
+      <h2>Консультація ветеринара</h2>
+      <p>Маєте питання по утриманню чи розведенню тварин? Звертайтесь!</p>
+    </div>
+    <a href="contacts.html" class="btn-primary light">Написати нам</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="logo">ГерСам</span><p>Сучасна агробізнес-платформа для фермерів України.</p></div>
+    <div class="footer-links"><h4>Розділи</h4><ul><li><a href="cultures.html">Культури</a></li><li><a href="animals.html">Тварини</a></li><li><a href="tech.html">Техніка</a></li><li><a href="land.html">Земля</a></li></ul></div>
+    <div class="footer-links"><h4>Компанія</h4><ul><li><a href="about.html">Про нас</a></li><li><a href="contacts.html">Контакти</a></li></ul></div>
+    <div class="footer-contact"><h4>Контакти</h4><p>📞 +38 (050) 000-00-00</p><p>✉️ info@gersam.ua</p></div>
+    <div class="footer-bottom"><span>© 2024 ГерСам. Всі права захищені.</span></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
